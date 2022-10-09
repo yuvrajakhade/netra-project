@@ -1,0 +1,50 @@
+<div class="register-container">
+  <form>
+    <mat-card class="reg_mat_card">
+      <mat-card-title>Register</mat-card-title>
+
+      <div class="pt-3">
+        <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="Enter First Name">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Enter Last Name">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Phone number</mat-label>
+          <input type="tel" matInput placeholder="Enter phone number">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Enter email">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <button mat-raised-button color="primary">Submit</button>
+      </div>
+    </mat-card>
+  </form>
+</div>

@@ -1,0 +1,17 @@
+.register-container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reg_mat_card {
+  width: 400px;
+}
+
+mat-form-field {
+  width: 100%;
+}
